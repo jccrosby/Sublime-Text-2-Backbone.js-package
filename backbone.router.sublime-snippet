@@ -1,8 +1,35 @@
 <snippet>
     <content><![CDATA[
-Backbone.Router.extend({${0:properties}});
+Backbone.Router.extend({
+
+		// =====================================
+		// Properties
+		// =====================================
+
+		${1:properties},
+
+		routes: {
+			'':'${0:emptyRoute}',
+		},
+
+
+		// =====================================
+		// Init
+		// =====================================
+		
+
+		// =====================================
+		// Control
+		// =====================================
+
+
+		// =====================================
+		// Handlers
+		// =====================================
+	}
+);
 ]]></content>
-    <tabTrigger>br</tabTrigger>
+    <tabTrigger>router</tabTrigger>
     <scope>source.js</scope>
     <description>Backbone Router</description>
 </snippet>

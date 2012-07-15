@@ -1,8 +1,13 @@
 <snippet>
     <content><![CDATA[
-Backbone.Model.extend({${0:properties}});
+Backbone.Model.extend({
+		defaults: {
+			${0:name}: undefined,
+		}
+	}
+);
 ]]></content>
-    <tabTrigger>bm</tabTrigger>
+    <tabTrigger>model</tabTrigger>
     <scope>source.js</scope>
     <description>Backbone Model</description>
 </snippet>

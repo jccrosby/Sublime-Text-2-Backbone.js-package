@@ -1,8 +1,41 @@
 <snippet>
     <content><![CDATA[
-Backbone.View.extend({${0:properties}});
+Backbone.View.extend({
+		
+		// =====================================
+		// Properties
+		// =====================================
+
+		viewName: ${1:viewName},
+		
+		${1:properties},
+
+		events: {
+			${2:events}
+		},
+
+
+		// =====================================
+		// Init
+		// =====================================
+
+		initialize: function() {
+			${0}
+		}
+
+
+		// =====================================
+		// Control Methods
+		// =====================================
+
+
+		// =====================================
+		// Handlers
+		// =====================================
+	}
+);
 ]]></content>
-    <tabTrigger>bv</tabTrigger>
+    <tabTrigger>view</tabTrigger>
     <scope>source.js</scope>
     <description>Backbone View</description>
 </snippet>
